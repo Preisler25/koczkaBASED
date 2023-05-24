@@ -14,6 +14,7 @@ main{
     justify-content: center;
 }
 #main_cont{
+    box-sizing: border-box;
     background-color: red;
     color: white;
     font-size: 20px;
@@ -22,18 +23,6 @@ main{
     transition: all 0.5s ease-in-out;
     width: 90vw;
     height: 30vh;
-    #normal{
-        display: inline-block;
-        img{
-            width: 100px;
-            height: 100px;
-        }
-    }
-    #hello_there{
-        display: none;
-        width: 100px;
-        height: 100px;
-    }
     &:hover{
         background-color: blue;
         color: yellow;
@@ -41,11 +30,32 @@ main{
         padding: 60px;
         padding-bottom: 200px;
         box-shadow: 0 0 200px rgba(197, 197, 197, 0.5);
-        #normal{
-            display: none;
-        }
-        #hello_there{
-            display: inline-block;
-        }
     }
 }
+
+#hello {
+    position: relative;
+    
+    img {
+      display: block;
+      transition: all 0.3s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      z-index: 1;
+      
+      &.hover {
+        opacity: 0;
+        z-index: 2;
+      }
+    }
+    
+    &:hover img {
+      opacity: 0;
+    }
+    
+    &:hover img.hover {
+      opacity: 1;
+    }
+  }
