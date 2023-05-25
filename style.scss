@@ -59,18 +59,21 @@ header {
 
 
 #pic_holder {
+  display: flex;
+  justify-content: center;
   img {
     height: 30vh;
-    width: 30vw;
     border-radius: 10px;
   }
 
   img:nth-child(1n) {
     display: block;
+    width: max-content;
   }
 
   img:nth-child(2n) {
     display: none;
+    width: 30vw;
   }
 }
 
