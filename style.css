@@ -24,17 +24,37 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.koczka_element {
-  display: flex;
-  height: 30vh;
-  width: 50vw;
-  border: 2px solid black;
-}
-
 #koczkas {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
+}
+
+.koczka_element {
+  display: flex;
+  margin-top: 40px;
+  height: 40vh;
+  width: 30vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.koczka_element:nth-child(1n) {
+  background-color: rgb(219, 157, 186);
+  align-self: flex-start;
+  margin-left: 20vw;
+}
+
+.koczka_element:nth-child(2n) {
+  background-color: rgb(219, 157, 186);
+  align-self: flex-end;
+  margin-right: 20vw;
+}
+
+#pic_holder img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }/*# sourceMappingURL=style.css.map */
