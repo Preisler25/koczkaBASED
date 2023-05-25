@@ -57,6 +57,15 @@ header {
   margin-right: 10vw;
 }
 
+.koczka_element:nth-last-child(-n+2) {
+  margin-left: 10vh;
+  margin-right: 30vh;
+}
+
+.koczka_element:nth-child(4) {
+  margin-top: -20vh;
+}
+
 #pic_holder {
   display: flex;
   justify-content: center;
@@ -64,6 +73,7 @@ header {
 #pic_holder img {
   height: 30vh;
   border-radius: 10px;
+  padding-bottom: 3vh;
 }
 #pic_holder img:nth-child(1n) {
   display: block;

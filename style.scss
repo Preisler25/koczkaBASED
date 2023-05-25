@@ -58,13 +58,24 @@ header {
   margin-right: 10vw;
 }
 
+.koczka_element:nth-last-child(-n+2) {
+  margin-left: 10vh;
+  margin-right: 30vh;
+}
+
+.koczka_element:nth-child(4) {
+  margin-top: -20vh;
+}
+
 
 #pic_holder {
   display: flex;
   justify-content: center;
+
   img {
     height: 30vh;
     border-radius: 10px;
+    padding-bottom: 3vh;
   }
 
   img:nth-child(1n) {
