@@ -38,23 +38,43 @@ header {
   border-radius: 10px;
   flex-direction: column;
   justify-content: center;
+  padding: 1vh;
+}
+.koczka_element h2 {
+  align-self: center;
 }
 
 .koczka_element:nth-child(1n) {
   background-color: rgb(219, 157, 186);
   align-self: flex-start;
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 
 .koczka_element:nth-child(2n) {
   background-color: rgb(219, 157, 186);
   align-self: flex-end;
-  margin-right: 20vw;
+  margin-right: 10vw;
 }
 
 #pic_holder img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  height: 40vh;
+  width: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: rgb(157, 186, 219);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */
