@@ -6,6 +6,8 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(219, 157, 216);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
 }
 
 header {
@@ -22,52 +24,17 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main {
+.koczka_element {
+  display: flex;
+  height: 30vh;
+  width: 50vw;
+  border: 2px solid black;
+}
+
+#koczkas {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-#main_cont {
-  box-sizing: border-box;
-  background-color: red;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  border: 10px solid black;
-  transition: all 0.5s ease-in-out;
-  width: 90vw;
-  height: 30vh;
-}
-#main_cont:hover {
-  background-color: blue;
-  color: yellow;
-  font-size: 5px;
-  padding: 60px;
-  padding-bottom: 200px;
-  box-shadow: 0 0 200px rgba(197, 197, 197, 0.5);
-}
-
-#hello {
-  position: relative;
-}
-#hello img {
-  display: block;
-  transition: all 0.3s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  z-index: 1;
-}
-#hello img.hover {
-  opacity: 0;
-  z-index: 2;
-}
-#hello:hover img {
-  opacity: 0;
-}
-#hello:hover img.hover {
-  opacity: 1;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
