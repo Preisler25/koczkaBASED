@@ -60,10 +60,27 @@ header {
 
 #pic_holder {
   img {
-    height: 40vh;
+    height: 30vh;
     width: 30vw;
-    object-fit: cover;
     border-radius: 10px;
+  }
+
+  img:nth-child(1n) {
+    display: block;
+  }
+
+  img:nth-child(2n) {
+    display: none;
+  }
+}
+
+#pic_holder:hover {
+  img:nth-child(1n) {
+    display: none
+  }
+
+  img:nth-child(2n) {
+    display: block;
   }
 }
 
